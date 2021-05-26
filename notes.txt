@@ -1,0 +1,62 @@
+#object oriented programming
+
+#class
+This is a blueprint of an object
+Car - features(attributes)-fuel capacity,no.of seats,speed mileage
+    - behaviours(methods)- starting,stopping,accelerating,decelerating
+
+    THis is a template of creating the car object
+#object
+Instance of a class. Objects can have diffrent property values but implement the same 
+attributes and methods.
+
+#methods
+A function that goes into a class.
+
+#__init__ method
+Allows us to initiate an instance of an object. IN this case it allows as to create 
+an instance of the class 
+pass the values that have been passed to the new object
+
+We pass the arguments and start with self. Self is a variable that represents the
+instance of the object itself 
+
+#instance variables
+these are variables that are unique to a specific object 
+
+#Attribute- Store the value of the value permanentlt for each separate object.
+This is important because we can refrence them inside the methods of our class.
+
+##Class variable
+are variables that belong to the entire class and can be accessed by all instances of the 
+class
+
+Unit Testing
+Import unittest
+import the class that you want to test 
+Create a class give it a descriptive name.
+Inherit unittest.TestCase - gives us access to diffrent testing capabilities within 
+that class
+method that starts with the word test 
+
+
+### python -m unittest contact_test.py
+
+
+# Decorators allow you to make simple
+ modifications to callable objects like functions, methods, or classes.
+# @classmethod simply informs the python interpreter that this is a method 
+ that belongs to the entire class
+ Just like the self argument refers to the object, cls referred to the entire class
+
+#Pyperclip
+$ python3.6 -m pip install pyperclip
+import pyperclip
+
+In our assertEqual method we use pyperclip.paste(),
+ and compare it with the contact object email.
+
+pyperclip.paste() method returns whatever 
+is copied on the machine's clipboard at that time.
+
+Run the test to confirm that it fails.
